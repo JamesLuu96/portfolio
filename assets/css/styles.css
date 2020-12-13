@@ -1,0 +1,178 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --base: rgb(44, 45, 48);
+}
+
+body {
+    font-family: 'Quicksand', Arial, sans-serif;
+    background-color: var(--base);
+}
+
+section {
+    padding: 20px;
+    margin: 30px;
+}
+
+.page-break {
+    width: 100%;
+    background-color: var(--base);
+    height: 10px;
+}
+
+h4 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+/* Nav */
+header {
+    background-color: var(--base);
+    padding: 20px;
+    margin: 15px 0px
+}
+
+header nav ul {
+    display:flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: lightgrey;
+    letter-spacing: 3px;
+    padding: 25px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+header nav ul li a:hover {
+    color: white;
+    background-color: rgb(53, 54, 58);
+    border-radius: 10px;
+}
+
+/* Site Container */
+.site-container {
+    width: 95%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    place-items: center;
+    border-bottom: 1px solid lightblue;
+    margin: 15px 15px 35px 15px;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-weight: 200;
+    flex: 1 50%;
+    text-align: center;
+}
+
+.hero span {
+    text-shadow: 2px 2px 3px gray;
+}
+
+.hero img {
+    width: 300px;
+    margin: 20px;
+    flex: 0 50%;
+}
+/* About */
+.about {
+    line-height: 1.7;
+}
+
+.about-group {
+    margin-bottom: 30px;
+}
+
+.about-group h2 {
+    color: rgb(88, 111, 119);
+    border-bottom: 1px solid lightblue;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.skills ul li {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(121, 187, 209);
+    border-radius: 10px;
+    color: white;
+}
+
+.skills ul li:hover {
+    background-color: rgb(131, 171, 185);
+    cursor: grab;
+}
+
+/* Portfolio */
+/* Contact */
+.contact input, .contact textarea {
+    display: block;
+    font-size: 18px;
+    margin: 15px 0;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid lightgray;
+    font-family: 'Quicksand', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.contact input:focus, .contact textarea:focus {
+    outline: none;
+    border: 1px solid lightskyblue;
+}
+
+.contact input::placeholder, .contact textarea::placeholder {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+.contact button {
+    border: none;
+    background-color: lightskyblue;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+.contact button:hover {
+    background-color: rgb(99, 176, 224);
+    cursor: pointer;
+}
+
+/* Resume */
+/* Footer */
+
