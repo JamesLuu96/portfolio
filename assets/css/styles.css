@@ -323,7 +323,7 @@ ion-icon:hover {
     }
 }
 /* For Phones */
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 675px) {
     header {
         margin: 5px;
         padding: 0;
