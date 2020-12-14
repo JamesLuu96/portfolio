@@ -142,6 +142,8 @@ header nav ul li a:hover {
 
 .portfolio img {
     width: 100%;
+    border-radius: 4px;
+    transition: .3s;
 }
 
 .portfolio .grid-container {
@@ -179,6 +181,37 @@ header nav ul li a:hover {
 .portfolio .project-6 {
     grid-column: 5 / span 2;
     grid-row: 5 / span 2;
+}
+
+.projects, .main-project {
+    position: relative;
+}
+
+.projects:hover img, .main-project:hover img {
+    filter: blur(2px) brightness(60%);
+}
+
+.projects :not(a):not(img), .main-project :not(a):not(img) {
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    color: cornsilk;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: .3s;
+}
+
+.projects:hover :not(a):not(img), .main-project:hover :not(a):not(img) {
+    opacity: 1;
+}
+
+.portfolio .projects {
+    font-size: 12px;
+}
+
+.portfolio .projects h3, .portfolio .main-project h3 {
+    top: 58%;
 }
 
 /* Contact */
