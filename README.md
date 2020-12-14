@@ -1,4 +1,7 @@
 # James Luu's Portfolio
+
+## About:  
+This is the repository of my Portfolio, where I showcase my work to employers.
   
 ## Link:  
 https://jamesluu96.github.io/portfolio/  
