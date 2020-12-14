@@ -15,8 +15,8 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
                 <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -143,6 +143,14 @@
 
         <div class="page-break"></div>
 
+        <!-- Resume -->
+        <section class="resume" id="resume">
+            <h4>My Resume</h4>
+            <iframe src='/assets/pdf/Resume.pdf#toolbar=0' frameborder="0" width="100%" height="600px"></iframe>
+        </section>
+
+        <div class="page-break"></div>
+
         <!-- Contact -->
         <section class="contact" id="contact">
             <h4>Contact Me</h4>
@@ -151,33 +159,26 @@
                 <input type="text" name="e-mail" placeholder="Email">
                 <input type="number" name="phone" placeholder="Phone (optional)">
                 <textarea name="message" id="message" placeholder="Message"></textarea>
-                <button type="submit">Send</button>
+                <div class="submit-container">
+                    <button type="submit">Send</button>
+                    <div class="logos">
+                        <a target="_blank" href=#>
+                            <ion-icon class="twitter" name="logo-twitter"></ion-icon>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/james-luu-7b62391ab/">
+                            <ion-icon class="linkedin" name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a target="_blank" href="https://github.com/JamesLuu96">
+                            <ion-icon class="github" name="logo-github"></ion-icon>
+                        </a>
+                        <a target="_blank" href="#">
+                            <ion-icon class="discord" name="logo-discord"></ion-icon>
+                        </a>
+                    </div>
+                </div>
             </form>
         </section>
-
         <div class="page-break"></div>
-
-        <!-- Resume -->
-        <section class="resume" id="resume">
-            <h4>My Resume</h4>
-            <iframe src='/assets/pdf/Resume.pdf#toolbar=0' frameborder="0" width="100%" height="600px"></iframe>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <a target="_blank" href=#>
-                <ion-icon class="twitter" name="logo-twitter"></ion-icon>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/james-luu-7b62391ab/">
-                <ion-icon class="linkedin" name="logo-linkedin"></ion-icon>
-            </a>
-            <a target="_blank" href="https://github.com/JamesLuu96">
-                <ion-icon class="github" name="logo-github"></ion-icon>
-            </a>
-            <a target="_blank" href="#">
-                <ion-icon class="discord" name="logo-discord"></ion-icon>
-            </a>
-        </footer>
     </div>
 
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>

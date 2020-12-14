@@ -214,6 +214,11 @@ header nav ul li a:hover {
     top: 58%;
 }
 
+/* Resume */
+.resume iframe{
+    margin: 0 auto;
+}
+
 /* Contact */
 .contact input, .contact textarea {
     display: block;
@@ -242,7 +247,7 @@ header nav ul li a:hover {
     background-color: lightskyblue;
     color: white;
     text-align: center;
-    padding: 10px 20px;
+    padding: 0px 20px;
     font-size: 16px;
     border-radius: 10px;
     letter-spacing: 1px;
@@ -253,21 +258,22 @@ header nav ul li a:hover {
     cursor: pointer;
 }
 
-/* Resume */
-.resume iframe{
-    margin: 0 auto;
+.submit-container {
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Footer */
-footer {
-    background-color: var(--base);
-    text-align: end;
-}
+/* Logos */
+
 ion-icon {
     padding: 3px;
     width: 20px;
     height: 20px;
     margin: 10px;
+}
+
+ion-icon:hover {
+    filter: brightness(50%);
 }
 
 .twitter {
