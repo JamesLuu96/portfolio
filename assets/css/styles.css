@@ -302,3 +302,76 @@ ion-icon:hover {
     color: white;
     border-radius: 10%;
 }
+
+/* For Tablets */
+@media screen and (max-width: 768px) {
+    .hero img {
+        flex: 0 100%;
+    }
+    .hero h1 {
+        flex: 1 100%;
+        margin-bottom: 20px;
+    }
+    .hero {
+        flex-wrap: wrap;
+    }
+    .about {
+        text-align: center;
+    }
+    .skills ul {
+        justify-content: center;
+    }
+}
+/* For Phones */
+@media screen and (max-width: 575px) {
+    header {
+        margin: 5px;
+        padding: 0;
+    }
+    header nav ul li a {
+        font-size: 13px;
+        letter-spacing: 0px;
+        padding: 10px;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+    }
+    header nav ul {
+        display:flex;
+        justify-content: space-around;
+    }
+    /* Grid for Mobile */
+    .portfolio .grid-container {
+        display: grid;
+        grid-gap: 7px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        align-items: center;
+    }
+    .portfolio .main-project {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+    } 
+    .portfolio .project-2 {
+        grid-column: 1 / span 3;
+        grid-row: 3 / span 2;
+    }
+    .portfolio .project-3 {
+        grid-column: 1 / span 3;
+        grid-row: 5 / span 2;
+    } 
+    .portfolio .project-4 {
+        grid-column: 1 / span 3;
+        grid-row: 7 / span 2;
+    }
+    .portfolio .project-5 {
+        grid-column: 1 / span 3;
+        grid-row: 9 / span 2;
+    }
+    .portfolio .project-6 {
+        grid-column: 1 / span 3;
+        grid-row: 11 / span 2;
+    }
+    .projects :not(a):not(img), .main-project :not(a):not(img) {
+        opacity: 1;
+    }
+}
