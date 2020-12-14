@@ -326,7 +326,10 @@ ion-icon:hover {
 @media screen and (max-width: 675px) {
     header {
         margin: 5px;
-        padding: 0;
+        padding: 10px 0 15px 0;
+        position: sticky;
+        top: 0;
+        z-index: 999;
     }
     header nav ul li a {
         font-size: 13px;
